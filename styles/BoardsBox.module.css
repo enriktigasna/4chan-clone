@@ -1,0 +1,65 @@
+.outerBox {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+}
+
+.boxbar {
+    background: #fca;
+    color: #800;
+    padding-left: .5em;
+    line-height: 2em;
+    position: relative;
+}
+
+.filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: .25em;
+
+}
+
+.boxContent {
+    padding: .5em;
+    font-size: 93%;
+    padding-top: .25em;
+    padding-bottom: 0;
+    display: flex;
+}
+
+.boxContent li {
+    list-style: none;
+}
+
+.column {
+    width: 12em;
+    color: #800;
+}
+
+.column a{
+    color: #800;
+    text-decoration: none;
+    line-height: 130%;
+}
+
+.column a:hover {
+    color:#e00;
+    text-decoration:underline
+   }
+
+.column h3 {
+    text-decoration: underline;
+    display: inline;
+    font-size: 100%;
+    font-weight: 700;
+}
+
+.filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: .25em;
+}

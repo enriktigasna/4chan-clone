@@ -1,0 +1,40 @@
+.outerBox {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+}
+
+.boxbar {
+    background: #800;
+    color: #fff;
+    padding-left: .5em;
+    line-height: 2em;
+    position: relative;
+}
+
+.closeButton {
+    background: #800 url(../public/img/icon-close-red.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: .25em;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.boxContent {
+    padding: .5em;
+    font-size: 93%;
+    line-height: 1.5em;
+    padding-top: .25em;
+    padding-bottom: 0;
+}
+
+.wotCnt {
+    min-height: 91px;
+}
