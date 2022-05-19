@@ -13,6 +13,8 @@ Make CSS for index, rules, TOS etc. ✅
 
 Make hashing controller ✅
 
+Make JWT controller
+
 /api/register
 
 /api/login (That returns your JWT token)
