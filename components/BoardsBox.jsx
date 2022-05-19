@@ -8,7 +8,7 @@ export default function Box() {
     const [boards, setBoards] = useState([]);
 
     useEffect(() => {
-        fetch("/api/boards")
+        fetch("/api/getBoards")
             .then(res => res.json())
             .then(
                 (data) => {
