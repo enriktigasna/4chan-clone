@@ -27,7 +27,7 @@ Make JWT controller ✅
 
 /api/getBoardPosts
 
-JWT authentication middleware
+JWT authentication middleware ✅
 
 /[slug]/
 
