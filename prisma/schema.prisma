@@ -11,17 +11,18 @@ datasource db {
 }
 
 model Board {
-  slug String @id @unique
-  name String
-  Posts Thread[]
+  slug      String    @id @unique
+  name      String
+  Posts     Thread[]
 }
 
 model User {
   id        String    @id @unique @default(uuid())
   admin     Boolean   @default(false)
   createdAt DateTime  @default(now())
-  email     String?
+  email     String?   @unique
   Posts     Thread[]
+  Replies   Reply[]
   hash      String
 }
 
@@ -29,18 +30,21 @@ model Thread {
   id        String    @id @unique @default(cuid())
   Board     Board     @relation(fields: [boardSlug], references: [slug])
   User      User      @relation(fields: [userId], references: [id])
-  createdAt DateTime?
+  createdAt DateTime? @default(now())
+  bumpedAt  DateTime? @updatedAt
   anonymous Boolean?  @default(true)
+  body      String
   Image     String?
   boardSlug String
   userId    String
-  Replys   Reply[]
+  Replys    Reply[]
 }
 
 model Reply {
   id        String    @id @unique @default(cuid())
-  Post      Thread      @relation(fields: [postId], references: [id])
-  createdAt DateTime?
+  Post      Thread    @relation(fields: [postId], references: [id])
+  Users     User      @relation(fields: [id], references: [id])
+  createdAt DateTime? @default(now())
   Image     String?
   postId    String
 }

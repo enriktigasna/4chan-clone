@@ -1,5 +1,5 @@
 const bcrypt = require("bcrypt");
-export default hashController = {
+export const hashController = {
   hashPassword: password => bcrypt.hashSync(password, 10),
-  validatePassword: password => bcrypt.compareSync(password, hash)
+  validatePassword: (password, hash) => bcrypt.compareSync(password, hash)
 }

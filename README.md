@@ -9,17 +9,17 @@ Make index that matches 4chan with boards from API ✅
 
 Make CSS for index, rules, TOS etc. ✅
 
-/api/boards ✅
+/api/getBoards ✅
 
 Make hashing controller ✅
 
-Make JWT controller
+Make JWT controller ✅
 
-/api/register
+/api/register ✅
 
-/api/login (That returns your JWT token)
+/api/login ✅
 
-/api/createThread
+/api/createThread ✅
 
 /api/createComment
 
