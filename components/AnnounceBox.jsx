@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/AnnounceBox.module.css'
 
-export default function Box() {
+export default function AnnounceBox() {
     return (
         <div className={styles.outerBox}>
             <div className={styles.boxInner}>

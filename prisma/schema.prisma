@@ -37,14 +37,16 @@ model Thread {
   Image     String?
   boardSlug String
   userId    String
-  Replys    Reply[]
+  Replies   Reply[]
 }
 
 model Reply {
   id        String    @id @unique @default(cuid())
-  Post      Thread    @relation(fields: [postId], references: [id])
-  Users     User      @relation(fields: [id], references: [id])
+  Thread    Thread    @relation(fields: [postId], references: [id])
+  User      User      @relation(fields: [userId], references: [id])
   createdAt DateTime? @default(now())
+  body      String
   Image     String?
+  userId    String
   postId    String
 }

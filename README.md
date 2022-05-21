@@ -21,13 +21,13 @@ Make JWT controller ✅
 
 /api/createThread ✅
 
-/api/createComment
+/api/createReply ✅
 
-/api/getThread
+/api/getThread ✅
 
-/api/getBoardPosts
+/api/getBoardThreads ✅
 
-JWT authentication middleware
+JWT authentication middleware ✅
 
 /[slug]/
 
@@ -42,3 +42,5 @@ Implement bumped-at for posts, to get latest bumped post at the top, but cap the
 Finish index, add footer, statistics etc.
 
 Add image upload
+
+Add e2e tests and unit tests

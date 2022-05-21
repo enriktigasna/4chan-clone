@@ -29,6 +29,10 @@ export default async function handler(req, res) {
       hash: hashController.hashPassword(req.body.password),
     },
   });
+
+  const token = JWTController.createToken(user.id);
+  res.setHeader("Set-Cookie", `token=${token}; HttpOnly; Max-Age=${60 * 60 * 24 * 7}`);
+  
   return res.json({
     token: JWTController.createToken(user.id),
   });

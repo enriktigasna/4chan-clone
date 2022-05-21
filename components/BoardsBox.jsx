@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/BoardsBox.module.css'
 import { useState, setState, useEffect } from "react"
 
-export default function Box() {
+export default function BoardsBox() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [boards, setBoards] = useState([]);
@@ -34,7 +34,7 @@ export default function Box() {
                         <h3>Exposed</h3>
                         <ul>
                             {boards.map(board => (
-                                <li key={board.id}>
+                                <li key={board.slug}>
                                     <a href={board.slug}>
                                         {board.name}
                                     </a>
