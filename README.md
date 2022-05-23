@@ -7,33 +7,33 @@ Make database model ✅
 
 Make index that matches 4chan with boards from API ✅
 
-Make CSS for index, rules, TOS etc. ✅
-
-/api/getBoards ✅
-
 Make hashing controller ✅
+
+Make CSS for index, rules, TOS etc. ✅
 
 Make JWT controller ✅
 
-/api/register ✅
-
-/api/login ✅
-
-/api/createThread ✅
-
-/api/createReply ✅
-
-/api/getThread ✅
-
-/api/getBoardThreads ✅
-
 JWT authentication middleware ✅
+
+
+| API Route | What it does |
+| --------- | ------------ |
+| /api/getBoards | Returns boards |
+| /api/register | Creates new user and returns JWT |
+| /api/login | Generates JWT for user and returns it |
+| /api/createThread | Creates a thread for selected Board |
+| /api/createReply | Creates reply for selected thread |
+| /api/getThread | Returns thread |
+| /api/getBoardThreads | Returns 10 threads for selected board, with pagination, sorts by last created |
+
 
 /[slug]/
 
 /[Thread]/
 
 /[Reply]/
+
+Make unique access token generator for each user
 
 Make CSS for /[slug]/, /[Thread]/, /[Reply]/ etc.
 
