@@ -1,4 +1,18 @@
 # 4chan clone
+
+
+| API Route | What it does |
+| --------- | ------------ |
+| /api/getBoards | Returns boards |
+| /api/register | Creates new user and returns JWT |
+| /api/login | Generates JWT for user and returns it |
+| /api/createThread | Creates a thread for selected Board |
+| /api/createReply | Creates reply for selected thread |
+| /api/getThread | Returns thread |
+| /api/getBoardThreads | Returns 10 threads for selected board, with pagination, sorts by last created |
+
+
+
 ### TODO
 
 Most to least urgent
@@ -14,18 +28,6 @@ Make CSS for index, rules, TOS etc. ✅
 Make JWT controller ✅
 
 JWT authentication middleware ✅
-
-
-| API Route | What it does |
-| --------- | ------------ |
-| /api/getBoards | Returns boards |
-| /api/register | Creates new user and returns JWT |
-| /api/login | Generates JWT for user and returns it |
-| /api/createThread | Creates a thread for selected Board |
-| /api/createReply | Creates reply for selected thread |
-| /api/getThread | Returns thread |
-| /api/getBoardThreads | Returns 10 threads for selected board, with pagination, sorts by last created |
-
 
 /[slug]/
 
